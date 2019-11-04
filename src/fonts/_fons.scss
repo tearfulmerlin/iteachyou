@@ -1,0 +1,31 @@
+
+@font-face {
+    font-family: 'Roboto medium';
+    src: local('Roboto medium'), local('Roboto-Medium'), url('Robotomedium.woff2') format('woff2'), url('Robotomedium.woff') format('woff'), url('Robotomedium.ttf') format('truetype');
+    font-weight: 300;
+    font-style: medium;
+}
+@font-face {
+    font-family: 'lc-chalk';
+    src: local('lc-chalk'), local('lc-chalk'), url('lc-chalk.woff2') format('woff2'), url('lc-chalk.woff') format('woff'), url('lc-chalk.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Museo Cyrl 300';
+    src: local('Museo Cyrl 300'), local('Museo Cyrl 300'), url('MuseoCyrl300.woff2') format('woff2'), url('MuseoCyrl300.woff') format('woff'), url('MuseoCyrl300.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Museo Cyrl 500';
+    src: local('Museo Cyrl 500'), local('Museo Cyrl 500'), url('MuseoCyrl500.woff2') format('woff2'), url('MuseoCyrl500.woff') format('woff'), url('MuseoCyrl500.ttf') format('truetype');
+    font-weight: 500;
+    font-style: medium;
+}
+@font-face {
+    font-family: 'Museo Cyrl 700';
+    src: local('Museo Cyrl 700'), local('Museo Cyrl 700'), url('MuseoCyrl700.woff2') format('woff2'), url('MuseoCyrl700.woff') format('woff'), url('MuseoCyrl700.ttf') format('truetype');
+    font-weight: 700;
+    font-style: bold;
+}

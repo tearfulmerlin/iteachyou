@@ -1,0 +1,47 @@
+@import "./reset";
+@import "./vars";
+@import "./header";
+@import "../fonts/fons";
+
+body {
+  font-family: 'Museo Cyrl 300';
+}
+
+h1 {
+  font-family: "Museo Cyrl 700";
+}
+
+.section {
+  position: relative;
+  color: $purple;
+  z-index: 1;
+}
+
+.cta-button {
+  padding: 20px 40px;
+  font-size: 16px;
+  font-family: "Museo Cyrl 700";
+  color: $white-text;
+  outline: none;
+  border: 1px solid $purple;
+  border-radius: 4px;
+  background: linear-gradient(-112deg, $dark-orange, $light-orange 94%);
+  box-shadow: 0px 3px 3px $shadow-dark;
+  cursor: pointer;
+
+  &:hover {
+    background: linear-gradient(0deg, $dark-orange, $light-orange 94%);
+    box-shadow: 0px 3px 7px $shadow-dark;
+  }
+
+  &:active {
+    box-shadow: 0px 3px 3px $shadow-dark;
+  }
+}
+
+@import "./utp";
+@import "./cases";
+@import "./mistakes";
+@import "./advances";
+@import "./teacher";
+@import "./student";

@@ -1,0 +1,125 @@
+.teacher {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+
+  &__heading {
+    margin-top: 45px;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    text-align: center;
+    line-height: 0.75;
+  }
+
+  &__subheading {
+    font-size: 0.5em;
+  }
+
+  &__content {
+		display: flex;
+  }
+
+  &__img {
+		&-wrapper {
+			position: relative;
+			align-self: center;
+			width: 200px;
+			height: 280px;
+			margin-right: 75px;
+
+			&::before {
+				content: "";
+				display: block;
+				position: absolute;
+				left: -50%;
+				top: -85%;
+				width: 370px;
+				height: 700px;
+				// transform: translate(0, -38%);
+				background-image: url(../images/5gettoknow.png);
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: 50% 50%;
+				z-index: -1;
+			}
+		}
+
+		// position: absolute;
+		// width: 400px;
+		// height: 800px;
+		// transform: translate(0, -38%);
+		// background-image: url(../images/5gettoknow.png);
+		// background-size: contain;
+		// background-repeat: no-repeat;
+		// background-position: 50% 50%;
+		// z-index: -1;
+	}
+	
+	&__bullets {
+		margin-bottom: 30px;
+	}
+
+  &__bullet {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  
+    &-heading {
+      margin-top: 30px;
+      margin-bottom: 10px;
+      font-size: 1.2em;
+
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        top: 30px;
+        left: -30px;
+        background-image: url(../images/icon-nike.png);
+      }
+    }
+  }
+}
+
+@media (max-width: 739px) {
+  .teacher {
+		&-wrapper::before {
+			top: -138%;
+			left: -109%;
+		}
+	}
+}
+@media (max-width: 325px) {
+  .teacher {
+    &__heading {
+      margin-top: 45px;
+      margin-bottom: 30px;
+      font-size: 2em;
+      text-align: center;
+      line-height: 1;
+    }
+  
+    &__subheading {
+      font-size: 0.7em;
+    }
+
+    &__img {
+			&-wrapper {
+				margin-right: 0;
+			}
+
+			&-wrapper::before {
+				top: -138%;
+				left: -200%;
+			}
+    }
+
+    &__bullets {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

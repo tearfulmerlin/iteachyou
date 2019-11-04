@@ -1,0 +1,117 @@
+.advances {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+
+  &__heading {
+    margin-top: 45px;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    text-align: center;
+    line-height: 0.75;
+  }
+
+  &__subheading {
+    font-size: 0.5em;
+  }
+
+  &__content {
+		display: flex;
+		flex-direction: row-reverse;
+  }
+
+  &__img {
+    align-self: center;
+    width: 464px;
+    height: 280px;
+    margin-left: 75px;
+		background-image: url(../images/4whatyougot.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+	}
+	
+	&__bullets {
+		margin-bottom: 30px;
+	}
+
+  &__bullet {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  
+    &-heading {
+      margin-top: 30px;
+      margin-bottom: 10px;
+      font-size: 1.2em;
+
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        left: -30px;
+        background-image: url(../images/icon-nike.png);
+      }
+    }
+  }
+}
+
+@media (max-width: 1059px) {
+  .advances {
+    &__img {
+			margin-left: 20px;
+		}
+	}
+}
+@media (max-width: 1023px) {
+  .advances {
+    &__content {
+      flex-direction: column;
+    }
+
+    &__img {
+			margin-left: 0;
+			width: 90%;
+			height: 35vw;
+    }
+
+    &__bullets {
+      display: flex;
+      flex-direction: column;
+      padding: 0 5px 0 40px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (max-width: 560px) {
+  .advances {
+    &__heading {
+      margin-top: 45px;
+      margin-bottom: 30px;
+      font-size: 2em;
+      text-align: center;
+      line-height: 1;
+    }
+  
+    &__subheading {
+      font-size: 0.7em;
+    }
+
+    &__img {
+			width: 90%;
+			height: 40vw;
+      margin-right: 0;
+      background-size: contain;
+      background-position: 50% 50%;
+    }
+
+    &__bullets {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

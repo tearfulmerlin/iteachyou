@@ -1,0 +1,110 @@
+.utp-section {
+  background-image: url(../images/1olha.png);
+
+  background-position: 90% bottom;
+  background-repeat: no-repeat;
+}
+
+.utp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(-30%);
+  }
+
+  &__heading {
+    max-width: 563px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    font-size: 45px;
+  }
+
+  &__action {
+    margin-top: 50px;
+    margin-bottom: 70px;
+  }
+
+  &__bullet {
+    position: relative;
+    margin-bottom: 20px;
+    font-size: 18px;
+  
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 25px;
+      height: 25px;
+      left: -30px;
+      top: 0;
+      background-image: url(../images/icon-nike.png);
+    }
+  }
+}
+
+@media (max-width: 1270px) {
+  .hero {
+    background-position: 95% bottom;
+  }
+}
+
+@media (max-width: 1190px) {
+  .hero {
+      background-position: -10% bottom;
+    }
+
+  .utp {
+    background-color: rgba(0, 0, 0, 0.8);
+    align-items: center;
+    
+    &__text {
+      align-items: center;
+      transform: translate(0);
+      color: $white-text;
+    }
+
+    &__bullet::before {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 677px) {
+  .hero {
+    background-position-x: -40px;
+  }
+
+  .utp {
+    &__heading {
+      font-size: 2.2em;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    &__heading {
+      margin-bottom: 30px;
+    }
+
+    &__bullet {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .hero {
+    background-position: -40px 20px;
+  }
+
+  .utp {
+    &__heading {
+      font-size: 1.8em;
+      padding: 0 20px;
+    }
+  }
+}
