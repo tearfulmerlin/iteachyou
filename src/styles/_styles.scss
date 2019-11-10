@@ -1,7 +1,7 @@
 @import "./reset";
 @import "./vars";
 @import "./header";
-@import "../fonts/fons";
+@import "../fonts/fonts";
 
 body {
   font-family: 'Museo Cyrl 300';
@@ -9,6 +9,7 @@ body {
 
 h1 {
   font-family: "Museo Cyrl 700";
+  padding: 15px;
 }
 
 .section {
@@ -45,3 +46,4 @@ h1 {
 @import "./advances";
 @import "./teacher";
 @import "./student";
+@import "./clients";

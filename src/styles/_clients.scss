@@ -1,0 +1,98 @@
+.clients {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+
+  &__heading {
+    margin-top: 45px;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    text-align: center;
+    line-height: 0.75;
+  }
+
+  &__subheading {
+    font-size: 0.5em;
+	}
+
+	&__slider-container {
+		width: 700px;
+		margin: 0 auto 40px;
+	}
+
+	&__slide {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	&__slide-heading {
+		display: flex;
+		align-items: center;
+		margin-bottom: 10px;
+	}
+	
+	&__photo {
+		width: 167px;
+		height: 167px;
+		border: 5px solid;
+		border-radius: 50%;
+		background-image: url('../images/7recomendation-case1.png');
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-size: cover;
+	}
+
+	&__content {
+		width: 400px;
+	}
+
+	&__social {
+		margin: 0 0 0 10px;
+	}
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-family: 'slick';
+    font-size: 0;
+    opacity: .75;
+		color: #4f3971;
+		display: block;
+		width: 24px;
+		height: 36px;
+		background-image: url('../images/icon-arrow-purple.png');
+}
+.slick-next:before {
+	transform: rotate(180deg);
+}
+
+.slick-dots {
+	bottom: -45px;
+}
+
+@media (max-width: 1100px) {
+	.clients {
+
+		.clients__slider-container {
+			width: 500px;
+			margin: 0 auto 60px;
+		}
+
+		&__slide {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		&__photo {
+			margin-bottom: 20px;
+		}
+
+		&__slide-heading {
+			margin-bottom: 5px;
+		}
+	}
+}
+
+@media (max-width: 539px) {
+}
