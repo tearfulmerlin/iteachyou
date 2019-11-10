@@ -119,6 +119,7 @@ body {
 
 h1 {
   font-family: "Museo Cyrl 700";
+  padding: 15px;
 }
 
 .section {
@@ -593,12 +594,18 @@ h1 {
 }
 
 @media (max-width: 739px) {
+  .teacher-wrapper {
+    width: 150px;
+  }
   .teacher-wrapper::before {
-    top: -138%;
-    left: -109%;
+    top: -150%;
+    left: -150%;
+  }
+  .teacher__bullets {
+    background-color: rgba(255, 255, 255, 0.7);
   }
 }
-@media (max-width: 325px) {
+@media (max-width: 425px) {
   .teacher__heading {
     margin-top: 45px;
     margin-bottom: 30px;
@@ -613,8 +620,8 @@ h1 {
     margin-right: 0;
   }
   .teacher__img-wrapper::before {
-    top: -138%;
-    left: -200%;
+    top: -125%;
+    left: -165%;
   }
   .teacher__bullets {
     display: flex;
@@ -705,7 +712,10 @@ h1 {
     align-items: center;
   }
   .student__img {
+    display: none;
     margin-right: 0;
+    top: 0;
+    left: 0;
   }
   .student__bullets {
     display: flex;
@@ -735,6 +745,102 @@ h1 {
     display: flex;
     flex-direction: column;
     padding: 0 5px 0 30px;
+  }
+}
+.clients {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+.clients__heading {
+  margin-top: 45px;
+  margin-bottom: 30px;
+  font-size: 2.5em;
+  text-align: center;
+  line-height: 0.75;
+}
+.clients__subheading {
+  font-size: 0.5em;
+}
+.clients__slider-container {
+  width: 700px;
+  margin: 0 auto 40px;
+}
+.clients__slide {
+  display: flex;
+  justify-content: space-around;
+}
+.clients__slide-heading {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.clients__photo {
+  width: 167px;
+  height: 167px;
+  border: 5px solid;
+  border-radius: 50%;
+  background-image: url("../images/7recomendation-case1.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.clients__content {
+  width: 400px;
+}
+.clients__social {
+  margin: 0 0 0 10px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-family: "slick";
+  font-size: 0;
+  opacity: 0.75;
+  color: #4f3971;
+  display: block;
+  width: 24px;
+  height: 36px;
+  background-image: url("../images/icon-arrow-purple.png");
+}
+
+.slick-next:before {
+  transform: rotate(180deg);
+}
+
+.slick-dots {
+  bottom: -45px;
+}
+
+@media (max-width: 1100px) {
+  .clients__slider-container {
+    width: 500px;
+    margin: 0 auto 60px;
+  }
+  .clients__slide {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .clients__photo {
+    margin-bottom: 20px;
+  }
+  .clients__slide-heading {
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 720px) {
+  .clients__slider-container {
+    width: 85%;
+  }
+  .clients__content {
+    width: 85%;
+  }
+
+  .slick-prev:before,
+.slick-next:before {
+    display: none;
   }
 }
 

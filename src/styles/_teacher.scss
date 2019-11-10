@@ -17,48 +17,37 @@
   }
 
   &__content {
-		display: flex;
+    display: flex;
   }
 
   &__img {
-		&-wrapper {
-			position: relative;
-			align-self: center;
-			width: 200px;
-			height: 280px;
-			margin-right: 75px;
+    &-wrapper {
+      position: relative;
+      align-self: center;
+      width: 200px;
+      height: 280px;
+      margin-right: 75px;
 
-			&::before {
-				content: "";
-				display: block;
-				position: absolute;
-				left: -50%;
-				top: -85%;
-				width: 370px;
-				height: 700px;
-				// transform: translate(0, -38%);
-				background-image: url(../images/5gettoknow.png);
-				background-size: contain;
-				background-repeat: no-repeat;
-				background-position: 50% 50%;
-				z-index: -1;
-			}
-		}
-
-		// position: absolute;
-		// width: 400px;
-		// height: 800px;
-		// transform: translate(0, -38%);
-		// background-image: url(../images/5gettoknow.png);
-		// background-size: contain;
-		// background-repeat: no-repeat;
-		// background-position: 50% 50%;
-		// z-index: -1;
-	}
-	
-	&__bullets {
-		margin-bottom: 30px;
-	}
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: -50%;
+        top: -85%;
+        width: 370px;
+        height: 700px;
+        background-image: url(../images/5gettoknow.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        z-index: -1;
+      }
+    }
+  }
+  
+  &__bullets {
+    margin-bottom: 30px;
+  }
 
   &__bullet {
     position: relative;
@@ -86,13 +75,20 @@
 
 @media (max-width: 739px) {
   .teacher {
-		&-wrapper::before {
-			top: -138%;
-			left: -109%;
-		}
-	}
+    &-wrapper {
+      width: 150px;
+    }
+    &-wrapper::before {
+      top: -150%;
+      left: -150%;
+    }
+    &__bullets {
+      background-color: rgba(255, 255, 255, .7);
+    }
+  }
 }
-@media (max-width: 325px) {
+
+@media (max-width: 425px) {
   .teacher {
     &__heading {
       margin-top: 45px;
@@ -107,14 +103,14 @@
     }
 
     &__img {
-			&-wrapper {
-				margin-right: 0;
-			}
+      &-wrapper {
+        margin-right: 0;
+      }
 
-			&-wrapper::before {
-				top: -138%;
-				left: -200%;
-			}
+      &-wrapper::before {
+        top: -125%;
+        left: -165%;
+      }
     }
 
     &__bullets {
