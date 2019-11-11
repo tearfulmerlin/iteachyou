@@ -843,5 +843,258 @@ h1 {
     display: none;
   }
 }
+.filter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+.filter__heading {
+  margin-top: 45px;
+  margin-bottom: 30px;
+  font-size: 2.5em;
+  text-align: center;
+  line-height: 0.75;
+}
+.filter__subheading {
+  font-size: 0.5em;
+}
+.filter__content {
+  display: flex;
+}
+.filter__img {
+  align-self: center;
+  width: 304px;
+  height: 388px;
+  margin-right: 75px;
+  background-image: url(../images/9motivation.png);
+  background-repeat: no-repeat;
+}
+.filter__bullet {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.filter__bullet-heading {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+.filter__bullet-heading::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 30px;
+  left: -30px;
+  background-image: url(../images/icon-cross.png);
+}
+
+@media (max-width: 740px) {
+  .filter__content {
+    flex-direction: column;
+  }
+  .filter__img {
+    margin-right: 0;
+  }
+  .filter__bullets {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5px 0 40px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 560px) {
+  .filter__heading {
+    margin-top: 45px;
+    margin-bottom: 30px;
+    font-size: 2em;
+    text-align: center;
+    line-height: 1;
+  }
+  .filter__subheading {
+    font-size: 0.7em;
+  }
+  .filter__img {
+    width: 100%;
+    height: 65vw;
+    margin-right: 0;
+    background-size: contain;
+    background-position: 50% 50%;
+  }
+  .filter__bullets {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.profit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+.profit__heading {
+  margin-top: 45px;
+  margin-bottom: 30px;
+  font-size: 2.5em;
+  text-align: center;
+  line-height: 0.75;
+}
+.profit__subheading {
+  font-size: 0.5em;
+}
+.profit__content {
+  display: flex;
+}
+.profit__img {
+  align-self: center;
+  width: 461px;
+  height: 346px;
+  margin-right: 75px;
+  background-image: url(../images/8cant-help.png);
+  background-repeat: no-repeat;
+}
+.profit__bullets {
+  margin-bottom: 30px;
+}
+.profit__bullet {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.profit__bullet:nth-child(1) .profit__bullet-heading::before {
+  content: "1";
+}
+.profit__bullet:nth-child(2) .profit__bullet-heading::before {
+  content: "2";
+}
+.profit__bullet:nth-child(3) .profit__bullet-heading::before {
+  content: "3";
+}
+.profit__bullet:nth-child(4) .profit__bullet-heading::before {
+  content: "4";
+}
+.profit__bullet-heading {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+.profit__bullet-heading::before {
+  display: block;
+  position: absolute;
+  color: #fefefe;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #290a59;
+  width: 25px;
+  height: 25px;
+  top: 30px;
+  left: -30px;
+}
+
+@media (max-width: 985px) {
+  .profit__content {
+    flex-direction: column;
+  }
+  .profit__img {
+    margin-right: 0;
+  }
+  .profit__bullets {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5px 0 40px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 560px) {
+  .profit__heading {
+    margin-top: 45px;
+    margin-bottom: 30px;
+    font-size: 2em;
+    text-align: center;
+    line-height: 1;
+  }
+  .profit__subheading {
+    font-size: 0.7em;
+  }
+  .profit__img {
+    width: 100%;
+    height: 65vw;
+    margin-right: 0;
+    background-size: contain;
+    background-position: 50% 50%;
+  }
+  .profit__bullets {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.footer-section {
+  margin-top: 85px;
+  background: linear-gradient(-112deg, #3e2d59, #563e7c 94%);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px 0;
+  color: #fefefe;
+}
+
+.policy__link {
+  text-decoration: none;
+  color: #fefefe;
+  margin-bottom: 5px;
+}
+
+.contacts__social {
+  display: flex;
+  justify-content: center;
+  margin: 5px auto 20px;
+}
+.contacts-icon {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+.contacts__mail-link {
+  background-image: url(../images/contact-gmail-icon.png);
+}
+.contacts__fb-link {
+  background-image: url(../images/contact-fb-icon.png);
+}
+.contacts__insta-link {
+  background-image: url(../images/contact-insta-icon.png);
+}
+.contacts__viber-link {
+  background-image: url(../images/contact-viber-icon.png);
+  margin-right: 0;
+}
+
+@media (max-width: 620px) {
+  .footer {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .policy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .policy__link {
+    text-decoration: none;
+    color: #fefefe;
+    cursor: pointer;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
