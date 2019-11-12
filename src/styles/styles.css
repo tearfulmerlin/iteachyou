@@ -1081,7 +1081,6 @@ h1 {
   .footer {
     flex-direction: column-reverse;
     align-items: center;
-    margin-bottom: 10px;
   }
 
   .policy {
