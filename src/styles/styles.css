@@ -114,11 +114,13 @@ body, p, a, h1, h2, h3, h4, ul, li {
   font-style: bold;
 }
 body {
-  font-family: "Museo Cyrl 300";
+  font-family: "Museo Cyrl 300", sans-serif;
+  font-weight: 300;
 }
 
 h1 {
-  font-family: "Museo Cyrl 700";
+  font-family: "Museo Cyrl 700", sans-serif;
+  font-weight: 700;
   padding: 15px;
 }
 
@@ -131,7 +133,8 @@ h1 {
 .cta-button {
   padding: 20px 40px;
   font-size: 16px;
-  font-family: "Museo Cyrl 700";
+  font-family: "Museo Cyrl 700", sans-serif;
+  font-weight: 700;
   color: #fefefe;
   outline: none;
   border: 1px solid #290a59;
