@@ -1,0 +1,28 @@
+{
+  "name": "iteachyou",
+  "version": "1.0.0",
+  "description": "Website about teaching &amp; tutoring English &amp; German languages for my wife",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tearfulmerlin/iteachyou.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tearfulmerlin/iteachyou/issues"
+  },
+  "homepage": "https://tearfulmerlin.github.com/iteachyou",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-copy": "^4.0.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-scss": "^1.4.0",
+    "gulp-uglifycss": "^1.1.0",
+    "node-sass": "^4.13.0"
+  }
+}
