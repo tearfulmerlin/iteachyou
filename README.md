@@ -1,2 +1,2 @@
 # iteachyou
-Website about teaching &amp; tutoring English &amp; German languages for my wife
+Website about teaching and tutoring English / German languages
